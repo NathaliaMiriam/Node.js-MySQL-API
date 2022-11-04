@@ -66,10 +66,10 @@ module.exports = {
     res.json(json);
   },
 
-  excluir: async (req, res) => {
+  deletar: async (req, res) => {
     let json = { error: "", result: {} };
 
-    await CarroService.excluir(req.params.codigo);
+    await CarroService.deletar(req.params.codigo);
 
     res.json(json);
   },

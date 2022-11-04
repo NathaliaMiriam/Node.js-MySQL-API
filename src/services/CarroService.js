@@ -65,7 +65,7 @@ module.exports = {
     });
   },
 
-  excluir: (codigo) => {
+  deletar: (codigo) => {
     return new Promise((aceito, rejeitado) => {
       db.query(
         "DELETE FROM carros WHERE codigo = ?",
